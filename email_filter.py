@@ -2,14 +2,16 @@ import imaplib
 import email
 from email.header import decode_header
 import json
+from security import EMAIL_USER, EMAIL_PASSWORD  # Import credentials
+
 
 # Increase the maximum line length for imaplib
 imaplib._MAXLINE = 10000000  # Set this to a large value to handle big responses
 
-# Email credentials and server details
-username = "yoely282@gmail.com"
-password = "muvuvysxscgiucia"  # Use your app password if 2-Step Verification is enabled
-imap_server = "imap.gmail.com"
+# # Email credentials and server details
+# username = "yoely282@gmail.com"
+# password = "muvuvysxscgiucia"  # Use your app password if 2-Step Verification is enabled
+# imap_server = "imap.gmail.com"
 
 # Connect to the email server
 def connect_to_email():
